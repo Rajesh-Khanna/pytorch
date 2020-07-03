@@ -28,7 +28,7 @@ from .summary import (
     scalar, histogram, histogram_raw, image, audio, text,
     pr_curve, pr_curve_raw, video, custom_scalars, image_boxes, mesh, hparams
 )
-
+from caffe2.python import workspace
 
 class FileWriter(object):
     """Writes protocol buffers to event files to be consumed by TensorBoard.
